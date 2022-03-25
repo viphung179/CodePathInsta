@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CodePathInsta</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">0GPdwGuaxqePjxa0Qiuts0dBTxnbLnmjH4Tf3QXQ</string>
+    <string name="back4app_client_key">ZHciot6gLnH4u0JduucyFDmlcGavhvdzml3wcaQG</string>
+</resources>
