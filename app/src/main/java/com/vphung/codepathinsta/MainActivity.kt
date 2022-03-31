@@ -13,6 +13,8 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.content.FileProvider
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import java.io.File
 
@@ -45,7 +47,28 @@ class MainActivity : AppCompatActivity() {
             goToLoginActivity()
         }
 
-        queryPosts()
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).setOnItemSelectedListener {
+            item ->
+
+            when (item.itemId) {
+                R.id.action_home -> {
+                    // TODO
+                    Toast.makeText(this, "home", Toast.LENGTH_SHORT).show()
+
+                }
+                R.id.action_compose -> {
+                    Toast.makeText(this, "compose", Toast.LENGTH_SHORT).show()
+
+                }
+                R.id.action_profile -> {
+                    Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show()
+
+                }
+            }
+            true
+        }
+
+//        queryPosts()
     }
 
     fun submitPost(description:String, user: ParseUser, file: File) {
