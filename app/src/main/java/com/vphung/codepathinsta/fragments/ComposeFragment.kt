@@ -60,10 +60,7 @@ class ComposeFragment : Fragment() {
             onLaunchCamera()
         }
 
-//        view.findViewById<Button>(R.id.logout_button).setOnClickListener() {
-//            ParseUser.logOut()
-//            goToLoginActivity()
-//        }
+
 
 
     }
@@ -141,11 +138,7 @@ class ComposeFragment : Fragment() {
         return File(mediaStorageDir.path + File.separator + fileName)
     }
 
-//    private fun goToLoginActivity() {
-//        val intent = Intent(this@, LoginActivity::class.java)
-//        startActivity(intent)
-//        finish()
-//    }
+
 
 
 }
